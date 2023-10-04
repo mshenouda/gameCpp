@@ -10,19 +10,23 @@
 #include <stdlib.h>
 #include <iomanip>
 
+using namespace std;
+
 class Game{
     private:
         
-        std::map<char, int> mapLetterToInt;
+        //map<char, char> mapLetterToInt;
+        map<int, char> mapIntToLetter;
         const int vecLen = 3;
         int trialsCounter;
         int successCounter;
-        std::vector<int> guessVec;
-        std::vector<int> pressVec; 
-        std::vector<char> resultVec;
+        vector<char> guessVec;
+        vector<char> pressVec; 
+        vector<char> resultVec;
 
     public:
         Game();
+        void gameIntro();
         void initalizeGame();
         void makeGuess();
         void playGame();
@@ -30,5 +34,8 @@ class Game{
         bool gameResult();
         void printGameStats();
         void printGuesses();
+        void errorMessage();
+        void successMessage();
+
 };
 #endif
