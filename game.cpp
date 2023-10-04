@@ -2,9 +2,6 @@
 
 Game::Game()
 {
-    // mapLetterToInt['A'] = 'A';
-    // mapLetterToInt['B'] = 'B';
-    // mapLetterToInt['C'] = 'C';
     mapIntToLetter[1] = 'A';
     mapIntToLetter[2] = 'B';
     mapIntToLetter[3] = 'C';

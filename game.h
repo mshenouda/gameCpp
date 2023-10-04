@@ -15,7 +15,6 @@ using namespace std;
 class Game{
     private:
         
-        //map<char, char> mapLetterToInt;
         map<int, char> mapIntToLetter;
         const int vecLen = 3;
         int trialsCounter;
